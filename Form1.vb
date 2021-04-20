@@ -3,33 +3,34 @@
         Call Afnan()
     End Sub
     Private Sub Afnan()
-        lbl1.Text = "Data tersebut"
+        lbl1.Text = "AFNAN"
     End Sub
 
     Private Sub btn2_Click(sender As Object, e As EventArgs) Handles btn2.Click
-        Call Fareez()
+        Dim strTxt As String
+        strTxt = TxtBox1.Text
+        lbl2.Text = strTxt
+        Fareez(strFareez:=TxtBox1.Text)
     End Sub
-    Private Sub Fareez()
-        Dim intKira As String
-        intKira = Trim(TxtBox1.Text)
-        lbl2.Text = intKira
+    Private Sub Fareez(strFareez As String)
+        Dim strInput As String
     End Sub
 
     Private Function btn3_Click(sender As Object, e As EventArgs) Handles btn3.Click
-        Call Haiqal()
+        Haiqal()
     End Function
 
     Private Function Haiqal()
-        lbl3.Text = "Data Tersebut"
-        Return lbl3
+        lbl3.Text = "Selamat Pagi"
     End Function
 
     Private Function btn4_Click(sender As Object, e As EventArgs) Handles btn4.Click
-        lbl4.Text = Nama()
+        Dim strTxt2 As String
+        strTxt2 = txtBox2.Text
+        lbl4.Text = strTxt2
+        Nama(strNama:=txtBox2.Text)
     End Function
-    Private Function Nama()
-        Dim strNama As String
-        strNama = txtBox2.Text
-        Return strNama
+    Private Function Nama(strNama As String)
+        Dim str As String
     End Function
 End Class
