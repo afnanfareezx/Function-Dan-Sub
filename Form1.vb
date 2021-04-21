@@ -12,7 +12,7 @@
         lbl2.Text = strTxt
         Fareez(strFareez:=TxtBox1.Text)
     End Sub
-    Private Sub Fareez(strFareez As String)
+    Private Sub Fareez(ByVal strFareez As String)
         Dim strInput As String
     End Sub
 
@@ -32,7 +32,7 @@
         Nama(strNama:=txtBox2.Text)
         Return lbl4
     End Function
-    Private Function Nama(strNama As String)
+    Private Function Nama(ByVal strNama As String)
         Dim str As String
     End Function
 End Class
