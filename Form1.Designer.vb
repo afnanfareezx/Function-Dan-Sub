@@ -32,6 +32,7 @@ Partial Class Form1
         Me.txtBox2 = New System.Windows.Forms.TextBox()
         Me.btn4 = New System.Windows.Forms.Button()
         Me.lbl4 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'btn1
@@ -120,12 +121,23 @@ Partial Class Form1
         Me.lbl4.TabIndex = 9
         Me.lbl4.Text = "Label4"
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Papyrus", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(48, 0)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(559, 33)
+        Me.Label1.TabIndex = 10
+        Me.Label1.Text = "AFNAN FAREEZ HAIQAL (18DDT19F1091)"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.ClientSize = New System.Drawing.Size(659, 399)
+        Me.ClientSize = New System.Drawing.Size(665, 377)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.lbl4)
         Me.Controls.Add(Me.btn4)
         Me.Controls.Add(Me.txtBox2)
@@ -153,4 +165,5 @@ Partial Class Form1
     Friend WithEvents txtBox2 As TextBox
     Friend WithEvents btn4 As Button
     Friend WithEvents lbl4 As Label
+    Friend WithEvents Label1 As Label
 End Class

@@ -7,10 +7,12 @@
     End Sub
 
     Private Sub btn2_Click(sender As Object, e As EventArgs) Handles btn2.Click
-        Fareez(strFareez:=TxtBox1.Text)
+        Dim strText As String = TxtBox1.Text
+        Fareez(strText)
+        lbl2.Text = strText
     End Sub
-    Private Sub Fareez(ByVal strFareez As String)
-        lbl2.Text = strFareez
+    Private Sub Fareez(ByRef strText As String)
+        strText = "Hello " & strText
     End Sub
 
     Private Function btn3_Click(sender As Object, e As EventArgs) Handles btn3.Click
@@ -23,10 +25,12 @@
     End Function
 
     Private Function btn4_Click(sender As Object, e As EventArgs) Handles btn4.Click
-        Nama(strNama:=txtBox2.Text)
-    End Function
-    Private Function Nama(ByVal strNama As String)
+        Dim strNama As String = txtBox2.Text
+        Nama(strNama)
         lbl4.Text = strNama
+    End Function
+    Private Function Nama(ByRef strNama As String)
+        strNama = "Hello " & strNama
         Return Nama
     End Function
 End Class
