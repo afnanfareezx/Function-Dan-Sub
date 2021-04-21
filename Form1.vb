@@ -7,10 +7,9 @@
     End Sub
 
     Private Sub btn2_Click(sender As Object, e As EventArgs) Handles btn2.Click
-        Fareez(TxtBox1.Text)
+        Fareez(strFareez:=TxtBox1.Text)
     End Sub
     Private Sub Fareez(ByVal strFareez As String)
-        strFareez = TxtBox1.Text
         lbl2.Text = strFareez
     End Sub
 
@@ -27,9 +26,7 @@
         Nama(strNama:=txtBox2.Text)
     End Function
     Private Function Nama(ByVal strNama As String)
-        Dim intShowUmur As Integer
-        intShowUmur = txtBox2.Text
-        lbl4.Text = intShowUmur
+        lbl4.Text = strNama
         Return Nama
     End Function
 End Class
