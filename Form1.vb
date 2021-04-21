@@ -22,6 +22,7 @@
 
     Private Function Haiqal()
         lbl3.Text = "Selamat Pagi"
+        Return lbl3.Text
     End Function
 
     Private Function btn4_Click(sender As Object, e As EventArgs) Handles btn4.Click
@@ -29,6 +30,7 @@
         strTxt2 = txtBox2.Text
         lbl4.Text = strTxt2
         Nama(strNama:=txtBox2.Text)
+        Return lbl4
     End Function
     Private Function Nama(strNama As String)
         Dim str As String
